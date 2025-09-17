@@ -99,8 +99,8 @@
     <h1>✏ Edit Student</h1>
 
     <form action="/CRUD2/students/update/<?= $student['id'] ?>" method="POST">
-        <input type="text" name="lastname" placeholder="Last Name" value="<?= htmlspecialchars($student['lastname']) ?>" required>
-        <input type="text" name="firstname" placeholder="First Name" value="<?= htmlspecialchars($student['firstname']) ?>" required>
+        <input type="text" name="last_name" placeholder="Last Name" value="<?= htmlspecialchars($student['last_name']) ?>" required>
+        <input type="text" name="first_name" placeholder="First Name" value="<?= htmlspecialchars($student['first_name']) ?>" required>
         <input type="email" name="email" placeholder="Email" value="<?= htmlspecialchars($student['email']) ?>" required>
         <button type="submit">Save Changes</button>
     </form>

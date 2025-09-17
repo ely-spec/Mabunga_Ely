@@ -204,8 +204,8 @@
         <!-- Add Student Form -->
         <div class="form-container">
             <form action="/CRUD2/students/create" method="POST">
-                <input type="text" name="lastname" placeholder="Last Name" required><br>
-                <input type="text" name="firstname" placeholder="First Name" required><br>
+                <input type="text" name="last_name" placeholder="Last Name" required><br>
+                <input type="text" name="first_name" placeholder="First Name" required><br>
                 <input type="email" name="email" placeholder="Email" required><br>
                 <button type="submit">Save Student</button>
             </form>
@@ -228,8 +228,8 @@
                         <?php foreach ($students as $student): ?>
                             <tr>
                                 <td><?= htmlspecialchars($student['id']) ?></td>
-                                <td><?= htmlspecialchars($student['lastname']) ?></td>
-                                <td><?= htmlspecialchars($student['firstname']) ?></td>
+                                <td><?= htmlspecialchars($student['last_name']) ?></td>
+                                <td><?= htmlspecialchars($student['first_name']) ?></td>
                                 <td><?= htmlspecialchars($student['email']) ?></td>
                                 <td>
                                     <a href="/CRUD2/students/edit/<?= $student['id'] ?>">✏ Edit</a> | 

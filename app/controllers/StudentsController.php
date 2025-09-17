@@ -20,8 +20,8 @@ class StudentsController extends Controller {
     public function create(): void
     {
         $data = [
-            'lastname'  => $this->io->post('lastname'),
-            'firstname' => $this->io->post('firstname'),
+            'last_name'  => $this->io->post('last_name'),
+            'first_name' => $this->io->post('first_name'),
             'email'     => $this->io->post('email')
         ];
 
@@ -44,8 +44,8 @@ class StudentsController extends Controller {
     public function update($id): void
     {
         $data = [
-            'lastname'  => $this->io->post('lastname'),
-            'firstname' => $this->io->post('firstname'),
+            'last_name'  => $this->io->post('last_name'),
+            'first_name' => $this->io->post('first_name'),
             'email'     => $this->io->post('email')
         ];
 
